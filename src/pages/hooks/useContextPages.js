@@ -1,7 +1,23 @@
 import React from 'react';
 
-const UseContextPage = () => {
-  return <div>UseContextPage</div>;
+const MenusContext = React.createContext();
+
+const Toolbar = () => {
+  return (
+    <MenusContext.Provider value={'sarah'}>
+      <UseContextPage />
+    </MenusContext.Provider>
+  );
 };
 
-export default UseContextPage;
+const UseContextPage = () => {
+  const ctx = React.useContext(MenusContext);
+
+  return (
+    <div>
+      <h1>{ctx}</h1>
+    </div>
+  );
+};
+
+export default Toolbar;

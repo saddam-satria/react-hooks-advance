@@ -33,6 +33,8 @@ module.exports = {
     'react/function-component-definition': 'off',
     'react/no-array-index-key': 'off',
     'react/jsx-curly-brace-presence': 'off',
+    'react/prop-types': 'off',
+    'react/destructuring-assignment': 'off',
     'testing-library/await-async-query': 'error',
     'testing-library/no-await-sync-query': 'error',
     'testing-library/no-debugging-utils': 'warn',
