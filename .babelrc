@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["@babel/env", { "targets": "defaults", "corejs": 3 }],
+    "@babel/react"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regrenator": true
+      }
+    ]
+  ]
+}
